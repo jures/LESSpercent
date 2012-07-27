@@ -7,7 +7,7 @@ Inspired by the following blog post: http://www.ifdattic.com/2011/10/19/converti
 Jure Stern - [Follow me on Twitter](https://twitter.com/JureStern)
 
 # How to use it
-Download the pxtofluid.less file and @import it into your main stylesheet file. If you changed the default font size change the value in the @basefont variable:
+Download the **pxtofluid.less** file and @import it into your main stylesheet file. If you changed the default font size change the value in the @basefont variable:
 
 	//Size of your font, without px.
 	@basefont: 16;
