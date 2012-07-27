@@ -1,0 +1,74 @@
+@basefont: 14; //Size of your font in the body tag without px.
+
+#pxtofluid {
+  
+  // Converting the width
+  .width( @target: @value, @context: @value ) {
+    width: (@target / @context) * 100%;
+  }
+  
+  // Converting the height
+  .height( @target: @value, @context: @value ) {
+    height: (@target / @context) * 100%;
+  }
+  
+  // Converting the font-size
+  .font-size( @target: @basefont, @context: @value ) {
+    font-size: (@target / @context) * 100%;
+  }
+  
+  // Converting the line-height
+  .line-height( @target: @basefont, @context: @value ) {
+    line-height: (@target / @context) * 100%;
+  }
+  
+  // Converting the padding
+  .padding( @target: @value, @context: @value ) {
+    padding: (@target / @context) * 100%;
+  }
+  
+  // Converting the padding-top
+  .padding-top( @target: @value, @context: @value ) {
+    padding-top: (@target / @context) * 100%;
+  }
+  
+  // Converting the padding-right
+  .padding-right( @target: @value, @context: @value ) {
+    padding-right: (@target / @context) * 100%;
+  }
+  
+  // Converting the padding-bottom
+  .padding-bottom( @target: @value, @context: @value ) {
+    padding-bottom: (@target / @context) * 100%;
+  }
+  
+  // Converting the padding-left
+  .padding-left( @target: @value, @context: @value ) {
+    padding-right: (@target / @context) * 100%;
+  }
+  
+  // Converting the margin
+  .margin( @target: @value, @context: @value ) {
+    margin: (@target / @context) * 100%;
+  }
+  
+  // Converting the margin-top
+  .margin-top( @target: @value, @context: @value ) {
+    margin-top: (@target / @context) * 100%;
+  }
+  
+  // Converting the margin-right
+  .margin-right( @target: @value, @context: @value ) {
+    margin-right: (@target / @context) * 100%;
+  }
+  
+  // Converting the margin-bottom
+  .margin-bottom( @target: @value, @context: @value ) {
+    margin-bottom: (@target / @context) * 100%;
+  }
+  
+  // Converting the margin-left
+  .margin-left( @target: @value, @context: @value ) {
+    margin-right: (@target / @context) * 100%;
+  }
+}

@@ -1,0 +1,158 @@
+@import url("../../pxtofluid.less");
+@import url("normalize.css");
+
+// Color Variables
+@font_color: #002930;
+@background: #ffffff;
+@black: #002930;
+@orange: #AC4A00;
+@yellow: #F8F0AF;
+
+// mixins
+.rounded-corners (@radius: 5px) {
+  border-radius: @radius;
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+}
+
+body {
+  #pxtofluid > .font-size( @basefont, 16 );
+  #pxtofluid > .line-height( 21, @basefont );
+  background: @background;
+}
+
+h1, h2, h3 {
+  margin-top:0;
+  margin-bottom:0;
+  #pxtofluid > .line-height( 18, @basefont );
+}
+
+h1 {
+  #pxtofluid > .font-size( 29.6, @basefont );
+  #pxtofluid > .padding-top( 19, 1000 );
+  #pxtofluid > .padding-bottom( 19, 1000 );
+}
+
+h2 {
+  #pxtofluid > .font-size( 22.6, @basefont );
+  #pxtofluid > .padding-top( 17, 1000 );
+  #pxtofluid > .padding-bottom( 17, 1000 );
+}
+
+h3 {
+  #pxtofluid > .font-size( 18.3, @basefont );
+  #pxtofluid > .padding-top( 24, 1000 );
+  #pxtofluid > .padding-bottom( 24, 1000 );
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+header {
+  background: @yellow;
+  .rounded-corners();
+  #pxtofluid > .margin-top( 20, 1000 );
+  width: 100%;
+  overflow: hidden;
+  
+  .logo {
+    float: left;
+    #pxtofluid > .width( 500, 1000 );
+    #pxtofluid > .padding( 20, 500 );
+  }
+  .navigation {
+    float: right;
+    #pxtofluid > .width( 400, 1000 );
+    #pxtofluid > .margin-top( 20, 400 );
+    
+    ul li {
+      display: inline;
+      a {
+        #pxtofluid > .font-size( 26, @basefont );
+        text-decoration: none;
+        color: @orange;
+        #pxtofluid > .padding-right( 2, 100 );
+        &:hover { color: darken(@orange, 10%); }
+      }
+    }
+  }
+}
+
+#content {
+  background: @yellow;
+  .rounded-corners();
+  
+  .row {
+    #pxtofluid > .margin-top( 20, 1000 );
+    #pxtofluid > .padding( 20, 1000 );
+    overflow: hidden;
+  }
+  
+  .usage {
+    #pxtofluid > .width( 560, 1000 );
+    float: left;
+  }
+  
+  .right {
+    #pxtofluid > .width( 340, 1000 );
+    #pxtofluid > .padding( 10, 320 );
+    float: right;
+    background: @orange;
+    color: @yellow;
+  }
+}
+
+footer {
+  
+  .copy {
+    text-align: right;
+    
+    a {
+      text-decoration: none;
+      color: @orange;
+      &:hover { color: darken(@orange, 10%); }
+    }
+  }
+}
+
+@media (max-width: 999px) {
+  body {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 830px) {
+  header {
+    .navigation ul li {
+      display: block;
+      
+      a {
+        #pxtofluid > .font-size( 20, @basefont );
+      }
+    }
+  }
+}
+
+@media (max-width: 660px) {
+  #content {
+    .usage,
+    .right {
+      float: none;
+      width: 96%;
+      #pxtofluid > .padding( 20, 1000 );
+    }
+    .right {
+      width: 92%;
+      #pxtofluid > .padding( 40, 1000 );
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    #pxtofluid > .font-size( 20.6, @basefont );
+  }
+}
