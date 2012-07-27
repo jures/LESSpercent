@@ -1,5 +1,5 @@
 # LESS script to convert px values to percentages
-The script uses Namespaces for the most common CSS rules which we need when styling a responsive webpage with percentages.
+The script uses Namespaces for the most common CSS rules which are needed when styling a responsive webpage with percentages.
 
 Inspired by the following blog post: http://www.ifdattic.com/2011/10/19/converting-px-to-ems-with-less/
 
@@ -31,3 +31,6 @@ After that you can use the following for your CSS rules:
  	#pxtofluid > .padding-right( 20, 1000 );
  	#pxtofluid > .padding-bottom( 20, 1000 );
  	#pxtofluid > .padding-left( 20, 1000 );
+
+# TODO
+* Combining the CSS rules for padding and margin to use the shorthand version.
