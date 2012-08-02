@@ -4,7 +4,7 @@ The script uses Namespaces for the most common CSS rules which are needed when s
 Inspired by the following blog post: http://www.ifdattic.com/2011/10/19/converting-px-to-ems-with-less/
 
 # Author
-Jure Stern - [Follow me on Twitter](https://twitter.com/JureStern)
+Jure Stern - [Follow me on Twitter](https://twitter.com/JureStern) or [read my blog](http://jure-stern.si/en/blog.html)
 
 # How to use it
 Download the **pxtofluid.less** file and @import it into your main stylesheet file. If you changed the default font size change the value in the @basefont variable:
